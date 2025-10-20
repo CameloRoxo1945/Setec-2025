@@ -1065,11 +1065,11 @@ body {
   }
 }
 
-/* Added media query for very small screens (360px and below) to fix text cutoff on devices like Motorola G32 */
+/* Reduce padding even more for very small screens to allow text to wrap properly */
 @media (max-width: 360px) {
   .hero-text {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     box-sizing: border-box;
     width: 100%;
   }
@@ -1081,6 +1081,7 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    line-height: 1.5;
   }
 
   .hero-title {
